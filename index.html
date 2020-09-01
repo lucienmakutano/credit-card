@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animated credit card</title>
+</head>
+<body>
+    <div class="card">
+        <img src="visa.png" alt="visa" class="card__visa">
+
+        <div class="card__input card__number">
+            <input type="text" value="2423 3543 2342 2343" onfocus="this.value=''" />
+        </div>
+
+        <div class="card__flex">
+
+            <div class="card__input">
+                <label for="holder">Holder</label>
+                <input type="text" value="John Doe" id="holder" onfocus="this.value=''">
+            </div>
+
+
+            <div class="card__input">
+                <label for="expires">Expires</label>
+                <input type="text" value="06/21" id="expires" onfocus="this.value=''">
+            </div>
+
+            <div class="card__input">
+                <label for="cvc">CVC</label>
+                <input type="text" value="1234" id="cvc" onfocus="this.value=''">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

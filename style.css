@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25rem;
+    height: 11rem;
+    border-radius: 30px;
+    background: linear-gradient(140deg, #4605ff, #883bef);
+    color: #fff;
+    padding: 3rem;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.55);
+    filter: blur(48px);
+    z-index: -1;
+}
+
+.card__visa {
+    width: 4rem;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+
+.card__flex {
+    display: flex;
+    align-items: center;
+}
+
+.card__input label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 900;
+    margin-bottom: 0.4rem;
+}
+
+.card__input input {
+    display: block;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.3rem;
+    width: 100%;
+    font-weight: 100;
+}
+
+.card__number {
+    margin-top: 5rem;
+}
+
+.card__number {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 0.3rem;
+}
